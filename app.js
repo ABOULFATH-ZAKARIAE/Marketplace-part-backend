@@ -24,9 +24,9 @@ app.use(bodyParser.json())
 mongoose.connect('mongodb+srv://aboulfath:aboulfath@cluster0.b0byq.mongodb.net/marketplace?retryWrites=true&w=majority' , {
   useNewUrlParser: true
 }).then(() => {
-  console.log("Successfully connected to the database");    
+  logWinston.info("Successfully connected to the database");    
 }).catch(err => {
-  console.log('Could not connect to the database. Exiting now...', err);
+  logWinston.error('Could not connect to the database. Exiting now...', err);
   process.exit();
 });
 
