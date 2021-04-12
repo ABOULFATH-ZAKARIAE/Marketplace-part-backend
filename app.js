@@ -6,7 +6,7 @@ var bodyParser = require('body-parser');
 
 
 const port = process.env.PORT || 5000;
-const logWinston = require('../backend/logWinston')
+// const logWinston = require('../backend/logWinston')
 
 app.use(express.json());
 app.use(cors());
